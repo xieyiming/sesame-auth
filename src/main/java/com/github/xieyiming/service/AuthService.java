@@ -146,24 +146,17 @@ public class AuthService {
 		}
 
 		if(success_result.equals("true")){
-			returnValue.put("code", "200");
-			returnValue.put("msg", "授权成功");
 			update.set("code", "200");
 			update.set("open_id", open_id);
 			update.set("msg", "授权成功");
 		}else{
-			returnValue.put("code", "0001");
-			returnValue.put("msg", "授权失败");
+
 			update.set("code", "0001");
 			update.set("msg", "授权失败");
 		}
 
 		//更新授权结果表
 		mongoTemplate.updateFirst(query, update, JSONObject.class, Constant.AUTH_LOGININFO_COLLECTION);
-		//重复授权会出现第一次授权的open_id
-		if(returnValue.containsKey("open_id")){
-			returnValue.remove("open_id");
-		}
 		return returnValue;
 		
 	}
