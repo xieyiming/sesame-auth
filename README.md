@@ -33,3 +33,14 @@ mvn install:install-file -Dfile=D:\芝麻信用\SDK\D:\芝麻信用\SDK\zmxy-sdk
 用时序图表示，可以清晰的展示出消息序列，传递消息的时间顺序，描述消息是如何在前端和芝麻信用间发送和接收的逻辑。
 ### 时序图
 ![avatar](http://chuantu.biz/t6/353/1533534842x-1566688712.png)
+
+## 请求示例
+POST：/auth/loginInfo/v1
+{
+    "idCard": "430802199411110317",
+    "name":"谢一鸣",
+}
+
+返回重定向地址，由浏览器自动重定向到芝麻信用的授权页面：
+redirect:https://zmopenapi.zmxy.com.cn/openapi.do?charset=UTF-8&method=zhima.auth.info.authorize&channel=app&sign=RBnhz%2BqS%2B0P07yL2ozVQC0eSA8ArdFwix3HuZult5%2Bamzy5KWYMl90BNQrX4MPuPntOquvUEurDMNKVhKZlE1fUoSIyiappqPoToXBwGKefe0i07PZb3OPY0Ff4SdEQpKniJgP0d5WL%2BO6W%2BziL8QFTqBDXAmlo0AMeHUCUgr7s%3D&version=1.0&app_id=1002208&sign_type=RSA&platform=zmop&params=Iz3EX7wZGg3IY0NCDGwAHJTOZ5US2thMKBgisxKIvc4Ecn7FaZR3L1h9G2Xb9K4DrTaTYFilpe%2BN4E5rAs7K5a%2FfLx2eGkqIxcMLTUPuJ%2BLi4YvIEVVQxfU%2F1WhxMgDGaDsNVnhV06O1pJxty5MsHvN1C3KEZ6VWBaoIb33H2aM56DSE%2BVEOXTGoKGYBbU%2B9JXqjJzleT%2FvxZYRFNhUIEICgspSe2PrRE1QHPyDgZnZfWY7mnCbvwfwL5inT%2F6rWX9gJwl9bVmyHlsyhsIwCMP6%2BRRkeSO85sSWPTFmKOeJCXuE36Shrb7JIkXgNA%2F%2BicRcQbsGokrlLIxLwE7mDQzjOONXSOiYOOKAS%2FE24Zdua9A2rkYYnYiu2ZPK5dUbSSLgihCjeyL1cf3e7Za2WnmZOBRqjYj5KZpoLkjcymmDDnmIWgagKvbAe14%2FC9k5dZvAVrSj07TO8DULiPHA95%2B6LtfFTCr8RCnqdYQHM5K8tkzpFOmYnjJouen7Pu7r3
+
