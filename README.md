@@ -12,7 +12,9 @@
 ![avatar](http://chuantu.biz/t6/352/1533290795x1822611413.png)
 
 ## 开发流程
-需要使用官方的SDK，这里需要把这个SDK，导入到MVN仓库中，我这里导入的是本地仓库
+首先要自己配置一个MongoDB数据库
+
+其次需要使用官方的SDK，这里需要把这个SDK，导入到MVN仓库中，我这里导入的是本地仓库
 
 ``` 
 mvn install:install-file -Dfile=D:\芝麻信用\SDK\D:\芝麻信用\SDK\zmxy-sdk-java-20170320112636.jar -DgroupId=com.github.xieyiming -DartifactId=sesame-sdk -Dversion=1.0 -Dpackaging=jar
