@@ -40,8 +40,8 @@ mvn install:install-file -Dfile=D:\芝麻信用\SDK\D:\芝麻信用\SDK\zmxy-sdk
 ## 请求示例
 POST：/auth/loginInfo/v1
 {
-    "idCard": "430802199411110317",
-    "name":"谢一鸣",
+    "idCard": "",
+    "name":"",
 }
 
 返回重定向地址，由浏览器自动重定向到芝麻信用的授权页面：
