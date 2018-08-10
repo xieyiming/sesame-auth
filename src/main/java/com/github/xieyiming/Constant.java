@@ -20,6 +20,13 @@ public class Constant {
 	//芝麻信用分库
 	public static final String QUERY_SCORE_COLLECTION = "scoreInfo";
 
+	//未授权 CODE
+	public static final String UNAUTHORIZED_CODE = "002";
+	//未授权 msg
+	public static final String UNAUTHORIZED_MSG = "未授权";
+	//芝麻信用产品CODE
+	public static final String PRODUCT_CODE = "w1010100100000000001";
+
 
 
 }
