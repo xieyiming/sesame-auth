@@ -20,6 +20,14 @@
 ``` 
 mvn install:install-file -Dfile=D:\芝麻信用\SDK\D:\芝麻信用\SDK\zmxy-sdk-java-20170320112636.jar -DgroupId=com.github.xieyiming -DartifactId=sesame-sdk -Dversion=1.0 -Dpackaging=jar
 ```
+安装到本地仓库后，就可以设置maven依赖
+``` 
+<dependency>
+	<groupId>com.github.xieyiming</groupId>
+	<artifactId>sesame-sdk</artifactId>
+	<version>1.0</version>
+</dependency>
+```
 
 
 具体开发，我们可以根据泳道图来进行业务逻辑梳理
