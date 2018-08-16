@@ -5,11 +5,11 @@
 ## 注册流程
 想要接入芝麻信用的公司，需要在芝麻信用平台注册申请，商家入驻，注册申请成功后然后在产品商店选择，芝麻分
 
-![avatar](http://chuantu.biz/t6/352/1533288887x-1566688712.png)
+![avatar](http://wx1.sinaimg.cn/mw690/0060lm7Tly1fubcwpr70pj30by0ekaaa.jpg)
 
 签约成功后，就可以开通服务，在注册增加一个应用，在这里设置回调地址和，公钥，私钥
 
-![avatar](http://chuantu.biz/t6/352/1533290795x1822611413.png)
+![avatar](http://wx1.sinaimg.cn/mw690/0060lm7Tly1fubcxc3njlj30jm05f74b.jpg)
 
 ## 开发流程
 
@@ -32,7 +32,7 @@ mvn install:install-file -Dfile=D:\芝麻信用\SDK\D:\芝麻信用\SDK\zmxy-sdk
 
 具体开发，我们可以根据泳道图来进行业务逻辑梳理
 ### 泳道图
-![avatar](http://chuantu.biz/t6/353/1533522473x-1566688718.png)
+![avatar](http://wx3.sinaimg.cn/mw690/0060lm7Tly1fubcy791qsj30i70ghabg.jpg)
 
 通过泳道图我们可以直观的看到，我们只需要开发两个接口:
 
@@ -43,7 +43,7 @@ mvn install:install-file -Dfile=D:\芝麻信用\SDK\D:\芝麻信用\SDK\zmxy-sdk
 
 用时序图表示，可以清晰的展示出消息序列，传递消息的时间顺序，描述消息是如何在前端和芝麻信用间发送和接收的逻辑。
 ### 时序图
-![avatar](http://chuantu.biz/t6/353/1533534842x-1566688712.png)
+![avatar](http://wx3.sinaimg.cn/mw690/0060lm7Tly1fubcytncdvj30kp0ifq4q.jpg)
 
 ## 请求示例
 POST：/auth/loginInfo/v1
